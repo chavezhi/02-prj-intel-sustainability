@@ -133,6 +133,13 @@ body{
 	overflow:hidden;
 }
 
+.milestone-title {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+  color: var(--accent);
+}
+
 .milestone-card:hover,
 .milestone-card:focus-within{
 	transform:translateY(-5px);
