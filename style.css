@@ -1,12 +1,12 @@
 
 
 :root{
-	--bg: #ffffff;
-	--muted: #6b7280;
-	--accent: #0071c5; /* Intel-like blue */
-	--header-tint: rgba(0,113,197,0.35);
-	--line-color: #e6eef9;
-	--card-bg: #f8fbff;
+	--bg: #080a0f;
+	--muted: rgba(255,255,255,0.68);
+	--accent: #66b2ff; /* Intel-like blue */
+	--header-tint: rgba(0,113,197,0.45);
+	--line-color: #1e293b;
+	--card-bg: #0f1724;
 	--radius: 10px;
 	--max-width: 1100px;
 }
@@ -18,7 +18,7 @@ body{
 	margin:0;
 	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 	background:var(--bg);
-	color:#0f172a;
+	color:#eff2ff;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
 	padding:2rem 1rem;
@@ -30,11 +30,11 @@ body{
 	margin-bottom:1.5rem;
 	padding:4rem 1rem 3rem;
 	background-image:
-		linear-gradient(var(--header-tint), var(--header-tint)),
+		linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
 		url('img/bg.jpg');
 	background-size:cover;
 	background-position:center;
-	background-blend-mode:color;
+	background-blend-mode:multiply;
 	color:#fff;
 }
 .intel-header-logo{
@@ -50,7 +50,7 @@ body{
 	margin:0.25rem 0;
 }
 .lead{
-	color:rgba(255,255,255,0.9);
+	color:rgba(255,255,255,0.88);
 	max-width:700px;
 	margin:0.5rem auto 0;
 }
@@ -60,8 +60,8 @@ body{
 	max-width:var(--max-width);
 	margin:0 auto;
 	padding:2rem 1rem 2rem;
-	background:rgba(240,248,255,0.7);
-	border:1px solid rgba(0,113,197,0.12);
+	background:rgba(12,17,28,0.95);
+	border:1px solid rgba(102,178,255,0.12);
 	border-radius:24px;
 }
 
@@ -86,6 +86,7 @@ body{
 .section-title{
 	font-size:clamp(1.5rem, 2.8vw, 2rem);
 	margin:0;
+	color:#f8fbff;
 }
 
 .milestones{
@@ -120,11 +121,11 @@ body{
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;
-	background:linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);
-	border:1px solid rgba(0,113,197,0.18);
+	background:linear-gradient(180deg, #111827 0%, #0f1724 100%);
+	border:1px solid rgba(102,178,255,0.18);
 	border-radius:18px;
 	padding:1.5rem;
-	box-shadow:0 20px 50px rgba(8,20,46,0.08);
+	box-shadow:0 24px 56px rgba(0,0,0,0.30);
 	scroll-snap-align:center;
 	scroll-snap-stop:always;
 	transition:transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease, background 220ms ease;
@@ -135,8 +136,8 @@ body{
 .milestone-card:hover,
 .milestone-card:focus-within{
 	transform:translateY(-5px);
-	box-shadow:0 24px 56px rgba(8,20,46,0.12);
-	border-color:rgba(0,113,197,0.2);
+	box-shadow:0 26px 60px rgba(0,0,0,0.40);
+	border-color:rgba(102,178,255,0.28);
 }
 
 .milestone-image{
@@ -152,7 +153,7 @@ body{
 .milestone-overlay{
 	position:absolute;
 	inset:0;
-	background:rgba(0,0,0,0.72);
+	background:rgba(0,0,0,0.78);
 	color:#ffffff;
 	padding:1.5rem;
 	display:flex;
@@ -229,7 +230,7 @@ body{
 	cursor:pointer;
 	font-size:0.9rem;
 }
-.btn:focus{outline:2px solid rgba(0,113,197,0.24);outline-offset:2px}
+.btn:focus{outline:2px solid rgba(102,178,255,0.36);outline-offset:2px}
 
 /* Small helper to center a heading for the timeline */
 .timeline-heading{ text-align:center; margin-bottom:1.25rem }
