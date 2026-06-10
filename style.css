@@ -31,10 +31,10 @@ body{
 	padding:4rem 1rem 3rem;
 	background-image:
 		linear-gradient(var(--header-tint), var(--header-tint)),
-		url('bg.jpg');
+		url('img/bg.jpg');
 	background-size:cover;
 	background-position:center;
-	background-blend-mode:overlay;
+	background-blend-mode:color;
 	color:#fff;
 }
 .intel-header-logo{
