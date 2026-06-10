@@ -4,6 +4,7 @@
 	--bg: #ffffff;
 	--muted: #6b7280;
 	--accent: #0071c5; /* Intel-like blue */
+	--header-tint: rgba(0,113,197,0.35);
 	--line-color: #e6eef9;
 	--card-bg: #f8fbff;
 	--radius: 10px;
@@ -24,7 +25,18 @@ body{
 }
 
 /* Header / logo styles */
-.site-header{ text-align:center; margin-bottom:1.5rem }
+.site-header{
+	text-align:center;
+	margin-bottom:1.5rem;
+	padding:4rem 1rem 3rem;
+	background-image:
+		linear-gradient(var(--header-tint), var(--header-tint)),
+		url('img/bg.jpg');
+	background-size:cover;
+	background-position:center;
+	background-blend-mode:overlay;
+	color:#fff;
+}
 .intel-header-logo{
 	width:220px;
 	max-width:72%;
@@ -33,12 +45,12 @@ body{
 	margin:0 auto 0.6rem;
 }
 .main-heading{
-	color:var(--accent);
+	color:#ffffff;
 	font-size:clamp(1.5rem, 3.5vw, 2.25rem);
 	margin:0.25rem 0;
 }
 .lead{
-	color:var(--muted);
+	color:rgba(255,255,255,0.9);
 	max-width:700px;
 	margin:0.5rem auto 0;
 }
